@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+<!-- La méthode jQuery fadeIn()est utilisée pour fondre un élément masqué. -->
+<script>
+    $(document).ready(function(){
+        $('.butten').click(function(){
+            $('#div1').fadeIn();
+            $('#div2').fadeIn("slow");
+            $('#div3').fadeIn(3000)
+        })
+    })
+</script>
+   
+    <button class="butten" >click</button>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:rgb(6, 116, 25);"></div>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:rgb(55, 0, 255);"></div>
+    
+</body>
+</html>

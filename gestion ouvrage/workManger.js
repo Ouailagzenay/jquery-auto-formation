@@ -11,13 +11,21 @@ class WorkManager {
         work.id = this.#counter
         this.#workList.push(work)
     }
-    
+    getItem(id) {
+        for (var i = 0; i < this.#workList.length; i++) {
+            if (id == this.#workList[i].id) {
+                return this.#workList[i]
+            }
+        }
+      }
 
-
-    getAllItems() {
-        return this.#workList.sort(function(a, b) {
-        return a.title.localeCompare(b.title)
-        })
-    
-    }
+    modiferOuvrage(work) {
+        
+        for (var i = 0; i < this.#workList.length; i++) {
+            if (work.id == this.#workList[i].id) {
+                this.#workList[i] = work
+            }
+        }
+      }
+   
 }

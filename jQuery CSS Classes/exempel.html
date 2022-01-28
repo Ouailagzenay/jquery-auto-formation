@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").addClass("important");
+    $("h1").addClass("blue");
+  });
+});
+</script>
+<style>
+.important {
+ font-size: 40PX;
+}
+
+.blue {
+  color: blue;
+}
+
+</style>
+</head>
+<body>
+<button>click</button>
+<h1>Heading 1</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quas?</p>
+
+</body>
+</html>

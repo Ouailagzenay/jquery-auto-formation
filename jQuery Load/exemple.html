@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").load("hello.txt");
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>click pour afficher le message</h2></div>
+
+<button>click</button>
+
+</body>
+</html>

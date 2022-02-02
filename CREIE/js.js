@@ -1,10 +1,9 @@
 $(function() {
   $.fn.fade = function() {  
   
-  $(this).fadeOut();
+  $(this).fadeToggle()
   return $(this); 
-  
-            
+          
   };
   
 })
